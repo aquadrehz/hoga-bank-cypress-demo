@@ -1,1 +1,5 @@
-{}
+{
+  "baseUrl": "https://anylogi-recruitment.web.app",
+  "ignoreTestFiles": ["*.js", "*.md"],
+  "testFiles": "**/*.feature"
+}
