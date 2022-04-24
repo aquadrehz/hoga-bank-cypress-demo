@@ -13,7 +13,7 @@ Feature: Signup
     And click "SIGNUP" button
     Then warning "User name cannot contain whitespaces" displayed
 
-  Scenario: TC_00004 Signup - Stopped from username blank
+  Scenario: TC_00003 Signup - Stopped from username blank
     Given go to Hoga Bank site
     And click "SIGNUP" button
     When fill username with "correct_user_004"
@@ -21,7 +21,7 @@ Feature: Signup
     And click "SIGNUP" button
     Then warning "Password cannot be less than 8 characters" displayed
 
-  Scenario: TC_00005 Signup - Stopped password length less than 8
+  Scenario: TC_00004 Signup - Stopped password length less than 8
     Given go to Hoga Bank site
     And click "SIGNUP" button
     When fill username with "correct_user_005"
@@ -29,7 +29,7 @@ Feature: Signup
     And click "SIGNUP" button
     Then warning "Password cannot be less than 8 characters" displayed
 
-  Scenario: TC_00006 Signup - Stopped password length more than 32
+  Scenario: TC_00005 Signup - Stopped password length more than 32
     Given go to Hoga Bank site
     And click "SIGNUP" button
     When fill username with "correct_user_006"
@@ -37,8 +37,7 @@ Feature: Signup
     And click "SIGNUP" button
     Then warning "Password cannot be longer than 32 characters" displayed
 
-
-  Scenario: TC_00007 Signup - Stopped from password do not contain number
+  Scenario: TC_00006 Signup - Stopped from password do not contain number
     Given go to Hoga Bank site
     And click "SIGNUP" button
     When fill username with "correct_user_007"
@@ -46,7 +45,7 @@ Feature: Signup
     And click "SIGNUP" button
     Then warning "Password must contain numbers" displayed
 
-  Scenario: TC_00008 Signup - Stopped from password do not contain uppercase
+  Scenario: TC_00007 Signup - Stopped from password do not contain uppercase
     Given go to Hoga Bank site
     And click "SIGNUP" button
     When fill username with "correct_user_008"
@@ -54,7 +53,7 @@ Feature: Signup
     And click "SIGNUP" button
     Then warning "Password must contain uppercase letters" displayed
 
-  Scenario: TC_00009 Signup - Passed with min password length
+  Scenario: TC_00008 Signup - Passed with min password length
     Given go to Hoga Bank site
     And click "SIGNUP" button
     When fill generated username with "correct_user_009" prefix
@@ -62,7 +61,7 @@ Feature: Signup
     And click "SIGNUP" button
     Then warning do not displayed
 
-  Scenario: TC_00010 Signup - Passed with max password length
+  Scenario: TC_00009 Signup - Passed with max password length
     Given go to Hoga Bank site
     And click "SIGNUP" button
     When fill generated username with "correct_user_010" prefix
@@ -70,7 +69,7 @@ Feature: Signup
     And click "SIGNUP" button
     Then warning do not displayed
 
-  Scenario: TC_00011 Signup - Passed with average password length
+  Scenario: TC_00010 Signup - Passed with average password length
     Given go to Hoga Bank site
     And click "SIGNUP" button
     When fill generated username with "correct_user_011" prefix

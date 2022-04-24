@@ -19,8 +19,7 @@ When('fill username with {string}', (username: string) => {
 });
 
 When('fill generated username with {string} prefix', (prefix: string) => {
-    let random_number = Math.round(Math.random()*100000)
-    Common.fillUsername(prefix +'_' +random_number)
+    Common.fillUsernameWithGenerated(prefix)
 });
 
 When('fill password with {string}', (password: string) => {
@@ -35,7 +34,7 @@ Then('warning do not displayed', (text: string) => {
     Common.warningNotDisplayed()
 });
 
-Then('And username {string} displayed in transaction table', (username: string) => {
+Then('username {string} displayed in transaction table', (username: string) => {
     Common.usernameDisplayed(username)
 });
 
