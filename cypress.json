@@ -1,5 +1,13 @@
 {
   "baseUrl": "https://anylogi-recruitment.web.app",
   "ignoreTestFiles": ["*.js", "*.md"],
-  "testFiles": "**/*.feature"
+  "testFiles": "**/*.feature",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "charts": true,
+    "html": true,
+    "json": true,
+    "overwrite": false,
+    "reportDir": "cypress/reports/mochawesome-report"
+  }
 }
